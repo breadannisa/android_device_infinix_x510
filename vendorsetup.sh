@@ -15,13 +15,13 @@
 #
 
 for flavor in eng userdebug user; do
-    add_lunch_combo "full_P350-${flavor}"
-    add_lunch_combo "lineage_P350-${flavor}"
-    add_lunch_combo "aicp_P350-${flavor}"
+    add_lunch_combo "full_x510-${flavor}"
+    add_lunch_combo "lineage_x510-${flavor}"
+    add_lunch_combo "aicp_x510-${flavor}"
 done
 
 # Hack for aicp
 if [ -d vendor/aicp/products/ ]; then
-cp -f device/ixion/P350/aicp.mk vendor/aicp/products/P350.mk
+cp -f device/infinix/x510/aicp.mk vendor/aicp/products/x510.mk
 fi
 
